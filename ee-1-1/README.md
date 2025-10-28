@@ -11,10 +11,11 @@ This directory contains the definition files for an Ansible Execution Environmen
 ## Configuration
 
 ### Base Image
-- **Base Image**: `registry.access.redhat.com/ubi9/python-311:latest`
+- **Base Image**: `registry.redhat.io/ansible-automation-platform-25/ee-minimal-rhel9:latest`
 
-### Ansible Collections (1)
+### Ansible Collections (2)
 - `community.crypto`
+- `google.cloud`
 
 ## Building the Execution Environment
 
