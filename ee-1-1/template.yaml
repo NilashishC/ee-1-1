@@ -7,7 +7,7 @@ metadata:
   annotations:
     ansible.io/template-type: execution-environment
     ansible.io/saved-template: 'true'
-  tags: ["execution-environment","ee1"]
+  tags: ["execution-environment","ee2"]
 spec:
   owner: group:ansible-team
   type: service
@@ -278,7 +278,7 @@ spec:
           title: Tags for the generated template
           description: Enter one or more tags.
           type: array
-          default: ["execution-environment","ee1"]
+          default: ["execution-environment","ee2"]
           items:
             type: string
           ui:
@@ -452,7 +452,7 @@ spec:
       if: ${{ parameters.publishToSCM }}
       input:
         catalogInfoUrl: ${{ steps['prepare-publish'].output.generatedRepoContentsUrl }}
-        optional: true;
+        optional: true
   output:
     links:
       - title: GitHub Repository

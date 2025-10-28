@@ -5,11 +5,11 @@ metadata:
   description: EE desc
   tags:
     - execution-environment
-    - ee1
+    - ee2
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: github.com/NilashishC/ee-1-1
 spec:
   type: ansible-execution-environment
-  owner: group:default/default
+  owner: admin
   lifecycle: production
