@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ee-1-1
+  description: ee
+  tags:
+    - execution-environment
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: github.com/NilashishC/ee-1-1
+spec:
+  type: ansible-execution-environment
+  owner: admin
+  lifecycle: production
