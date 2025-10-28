@@ -452,7 +452,7 @@ spec:
       if: ${{ parameters.publishToSCM }}
       input:
         catalogInfoUrl: ${{ steps['prepare-publish'].output.generatedRepoContentsUrl }}
-        optional: true;
+        optional: true
   output:
     links:
       - title: GitHub Repository
