@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ee-1-1
-  description: EE desc
+  description: DESC
   tags:
     - execution-environment
     - ee1
@@ -11,5 +11,5 @@ metadata:
     github.com/project-slug: github.com/NilashishC/ee-1-1
 spec:
   type: ansible-execution-environment
-  owner: group:default/default
+  owner: user:default/test_user_f914d7c8
   lifecycle: production
