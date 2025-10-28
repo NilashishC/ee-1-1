@@ -7,7 +7,7 @@ metadata:
   annotations:
     ansible.io/template-type: execution-environment
     ansible.io/saved-template: 'true'
-  tags: ["execution-environment"]
+  tags: ["execution-environment","ee1"]
 spec:
   owner: group:ansible-team
   type: service
@@ -20,7 +20,7 @@ spec:
         baseImage:
           title: Base execution environment image
           type: string
-          default: 'registry.access.redhat.com/ubi9/python-311:latest'
+          default: 'registry.redhat.io/ansible-automation-platform-25/ee-minimal-rhel9:latest'
           enum:
             - 'registry.access.redhat.com/ubi9/python-311:latest'
             - 'registry.redhat.io/ansible-automation-platform-25/ee-minimal-rhel9:latest'
@@ -85,7 +85,7 @@ spec:
         collections:
           title: Ansible Collections
           type: array
-          default: [{"name":"community.crypto"}]
+          default: [{"name":"community.crypto"},{"name":"google.cloud"}]
           description: Add collections manually
           items:
             type: object
@@ -278,7 +278,7 @@ spec:
           title: Tags for the generated template
           description: Enter one or more tags.
           type: array
-          default: ["execution-environment"]
+          default: ["execution-environment","ee1"]
           items:
             type: string
           ui:
